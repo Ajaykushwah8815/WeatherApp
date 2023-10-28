@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.heading {
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: double;
+    color: #000000;
+    letter-spacing: 3px;
+    text-shadow: 3.5px 3.5px red;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#myVideo2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.mainContainer {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(0 0 0 / 36%);
+    border-radius: 12px;
+    box-shadow: 0.5px 0.5px 3px 3px;
+}
+
+.searchbar {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: tr;
+}
+
+#input {
+    color: rgb(253, 253, 253);
+    /* border: 2px solid #00000021; */
+    font-weight: bold;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: larger;
+    width: 50%;
+    background-color: #0000004f;
+    border: none;
+    border-radius: 63px;
+}
+
+#button {
+    background-color: #0000004f;
+    padding: 14px;
+    border-radius: 213px;
+    border: none;
+    letter-spacing: 2px;
+    margin-right: 21px;
+}
+
+#button:hover {
+    background-color: rgba(13, 13, 13, 0.31);
+    box-shadow: 2px 2px 2px;
+}
+
+#input:hover {
+    background-color: rgba(13, 13, 13, 0.31);
+    border: none;
+}
+
+.displaybox {
+    height: 428px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    background-color: transparent;
+    justify-content: space-evenly;
+    margin-top: 42px;
+}
+
+.box2 {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    background-color: transparent;
+    margin-top: 50px;
+}
+
+.box3 {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: transparent;
+    margin-top: 43px;
+}
+
+.weatherimg {
+    width: 169px;
+    height: 165px;
+}
+
+.block {
+    position: relative;
+    margin: 10% auto 0;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.block:before,
+.block:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.block:after {
+    filter: blur(5px);
+}
